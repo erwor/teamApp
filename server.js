@@ -16,6 +16,6 @@ require('./server/config/routes')(app);
 require('./server/config/socket')(server);
 
 
-server.listen(3000, function(){
+server.listen(process.env.PORT || 5000, function(){
 	console.log("Servidor corriendo en el puerto: 3000");
 });
